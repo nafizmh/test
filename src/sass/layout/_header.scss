@@ -1,0 +1,69 @@
+.subheader {
+  background-color: $primary;
+  &-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0px;
+  }
+  &-left {
+    p {
+      color: $secondary;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  &-right {
+    select {
+      border: unset;
+      outline: unset;
+      background-color: transparent;
+      color: $secondary;
+      option {
+        border: unset;
+        outline: unset;
+        font-size: 13px;
+        color: #000;
+      }
+    }
+    a {
+      color: $secondary;
+      font-size: 13px;
+      margin-left: 24px;
+      &.need-help svg {
+        margin-right: 8px;
+        font-size: 13px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.main-menu {
+  background-color: $gray;
+  &-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    .search-box {
+      position: relative;
+      padding-right: 50px;
+      background-color: $secondary;
+      border-radius: 5px;
+      input {
+        padding: 13px 16px;
+        padding-right: 0px;
+        font-size: 16px;
+        text-transform: capitalize;
+        outline: unset;
+        border: unset;
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
